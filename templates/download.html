@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}" >
+        <title>YouTube Downloader</title>
+
+        {% endblock %}
+    </head>
+    <body class="content">
+      {% block body %}
+      <h1> Your Download is ready.</h1>
+      <h2>Have fun listening your music.</h2>
+      <form action="{{ url_for('download') }}" method="post">
+          <button><span></span>Download</button>
+      </form>
+      {% endblock %}
+    </body>
+</html>

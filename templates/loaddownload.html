@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}" >
+        <title>YouTube Downloader</title>
+        <script>
+            function waitForMe() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve();
+                }, 5000);
+            });
+        }
+        
+        document.addEventListener("DOMContentLoaded", function(event) {
+            waitForMe().then(() => {
+                window.location.href = "/loaddownload";
+            });
+        });
+        </script>
+        {% endblock %}
+    </head>
+    <body class="loadcontent">
+      {% block body %}
+      <h1> Please wait until your download is ready.</h1>
+      <h2>This might take a few moments depending of the amount of videos in your playlist.</h2>
+      {% endblock %}
+    </body>
+</html>

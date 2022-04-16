@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.content{
+    max-width: 100%;
+    max-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(indexbackground.gif);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+#urlinput{
+    width: 50vh;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    border: 2px solid #009688;
+}
+input, select, textarea{
+    color: white;
+}
+::placeholder { 
+    color: white;
+  }
+.content h1{
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+
+
+.playlistcontent{
+    max-width: 100%;
+    max-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(playlistbackground.gif);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+table {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto; 
+    text-align: left;
+  }
+  
+td {
+    padding-bottom: 20px;
+  }
+  
+img {
+    max-width: 50%;
+    max-height: 50vh;
+  }
+
+.tableinput{
+    margin-left: 5px;
+    position: absolute;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    background-color: #eee;
+}
+
+.playlistcontent h1{
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+
+
+.loadcontent{
+    max-width: 100%;
+    max-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(loaddownload.gif);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+}
+
+.loadcontent h1{
+    font-size: 45px;
+    margin-top: 40px;
+}
